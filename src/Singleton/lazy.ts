@@ -1,4 +1,4 @@
-class Singleton {
+export class Singleton {
     private static instance: Singleton | null = null;
 
     private constructor() {}
@@ -11,13 +11,8 @@ class Singleton {
     }
 
     // 예시 메서드
-    public say(): void {
-        console.log("lazy로 생성된 싱글톤입니다 👋");
-    }
+    public say(): string {
+        return "lazy로 생성된 싱글톤입니다 👋"; }
 }
 
-// 사용 예시
-const a = Singleton.getInstance();
-const b = Singleton.getInstance();
-console.log(a === b); // true
-a.say();
+
