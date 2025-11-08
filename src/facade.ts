@@ -1,28 +1,32 @@
-class ServiceA {
-    operationA(): string {
-        return "Service A 작업 완료";
-    }
-}
+import { Locker } from './prototype'
 
-class ServiceB {
-    operationB(): string {
-        return "Service B 작업 완료";
-    }
-}
+export class LockerFacade {
+    private lockers: Map<string, Locker>
 
-export class Facade {
-    private serviceA: ServiceA;
-    private serviceB: ServiceB;
-
-    constructor() {
-        this.serviceA = new ServiceA();
-        this.serviceB = new ServiceB();
+    constructor(lockers: Map<string, Locker>) {
+        this.lockers = lockers
     }
 
-    public doComplexTask(): string {
-        // 여러 서비스 작업을 하나로 감싸서 단순화
-        const resultA = this.serviceA.operationA();
-        const resultB = this.serviceB.operationB();
-        return `${resultA} + ${resultB} => Facade 단순 작업 완료`;
+    lock(id: string): string {
+        const locker = this.lockers.get(id)
+        if (!locker) return `Locker ${id} not found.`
+        if (locker.locked) return `${locker.name} is already locked.`
+        locker.locked = true
+        return `${locker.name} locked.`
+    }
+
+    unlock(id: string): string {
+        const locker = this.lockers.get(id)
+        if (!locker) return `Locker ${id} not found.`
+        if (!locker.locked) return `${locker.name} is already unlocked.`
+        locker.locked = false
+        return `${locker.name} unlocked.`
+    }
+
+    updateNote(id: string, note: string): string {
+        const locker = this.lockers.get(id)
+        if (!locker) return `Locker ${id} not found.`
+        locker.note = note
+        return `Note saved for ${locker.name}.`
     }
 }
