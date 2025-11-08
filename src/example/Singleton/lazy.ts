@@ -1,4 +1,4 @@
-export class Singleton {
+class Singleton {
     private static instance: Singleton | null = null;
 
     private constructor() {}
