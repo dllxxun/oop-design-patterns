@@ -4,18 +4,17 @@
 
 ## 1. 기본 예제 실행 결과 스크린샷
 
+- /example/Singleton/eager.ts ![img.png](img/singleton.png)
 
-![img.png](img/singleton.png) | eager.ts
+- /example/Factory/factoryMethod.ts ![img.png](img/factory.png)
 
-![img.png](img/factory.png) | factoryMethod.ts
+- /example/Adapter/adapter.ts ![img.png](img/adapter.png)
 
-![img.png](img/adapter.png) | adapter.ts
+- /example/Decorator/decorator.ts ![img.png](img/decorator.png)
 
-![img.png](img/decorator.png) | decorator.ts
+- /example/Observer/observer.ts ![img.png](img/observer.png)
 
-![img.png](img/observer.png) | observer.ts
-
-![img.png](img/visitor.png) | visitor.ts
+- /example/Visitor/visitor.ts ![img.png](img/visitor.png)
 
 ---
 
