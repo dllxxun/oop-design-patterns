@@ -4,19 +4,17 @@
 
 ## 1. 기본 예제 실행 결과 스크린샷
 
-'/example/Singleton/eager.ts' ![img.png](img/singleton.png)
+`/example/Singleton/eager.ts` ![img.png](img/singleton.png)
 
-'/example/Factory/factoryMethod.ts' ![img.png](img/factory.png)
+`/example/Factory/factoryMethod.ts` ![img.png](img/factory.png)
 
-'/example/Adapter/adapter.ts' ![img.png](img/adapter.png)
+`/example/Adapter/adapter.ts` ![img.png](img/adapter.png)
 
-'/example/Decorator/decorator.ts' ![img.png](img/decorator.png)
+`/example/Decorator/decorator.ts` ![img.png](img/decorator.png)
 
-'/example/Observer/observer.ts' ![img.png](img/observer.png)
+`/example/Observer/observer.ts` ![img.png](img/observer.png)
 
-'/example/Visitor/visitor.ts' ![img.png](img/visitor.png)
-
----
+`/example/Visitor/visitor.ts` ![img.png](img/visitor.png)
 
 ## 실행 방법
 
