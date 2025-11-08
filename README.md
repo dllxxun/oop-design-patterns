@@ -1,6 +1,5 @@
 # 객체지향 디자인 패턴 실습
 ---
-
 ## 1. 기본 예제 실행 결과 스크린샷
 
 `/example/Singleton/eager.ts` ![img.png](img/singleton.png)
@@ -25,10 +24,7 @@ npx ts-node factory.ts
 
 ---
 
-## 2. 실습 구현 과제
-
-
-## Bathhouse Locker System
+## 2. 실습 구현 과제 - Bathhouse Locker System
 
 ## 프로젝트 개요
 목욕탕 라커 시스템을 Vue 3 + TypeScript로 구현한 웹 앱입니다.  
@@ -42,10 +38,8 @@ npx ts-node factory.ts
 ## 설치 및 실행 방법
 
 1. 저장소 클론
-```bash
-git clone <your-repo-url>
-cd pattern
-```
+`git clone <your-repo-url>`
+`cd pattern`
 2. 의존성 설치
 `npm install`
 3. 개발 서버 실행
